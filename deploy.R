@@ -11,9 +11,9 @@ error_on_missing_name <- function(name) {
 }
 
 # Authenticate
-setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
-               token = error_on_missing_name("TOKEN"),
-               secret = error_on_missing_name("SECRET"))
+setAccountInfo(name = error_on_missing_name("practicemeltshiny"),
+               token = error_on_missing_name("8B14429957A5C5AD977ECB77B147A5CB"),
+               secret = error_on_missing_name("a01FiKOY/6zQE1bGNlIWhHh8yCEGNF/tEUJRWKyV"))
 
 # Deploy the application.
 deployApp(appFiles = c("ui.R", "server.R", "likes.rds"))
