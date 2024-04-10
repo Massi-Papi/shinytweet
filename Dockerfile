@@ -1,4 +1,4 @@
-FROM rocker/shiny:4.2.1
+FROM rocker/shiny:latest
 RUN install2.r rsconnect tibble dplyr stringr rtweet htmltools lubridate bslib reactable
 WORKDIR /home/shinytweet
 COPY ui.R ui.R 
