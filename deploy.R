@@ -10,10 +10,15 @@ error_on_missing_name <- function(name) {
   gsub("\"", "", var)
 }
 
+# Get the Shiny account name, token, and secret from the environment variables
+shiny_acc_name <- error_on_missing_name("SHINY_ACC_NAME")
+token <- error_on_missing_name("TOKEN")
+secret <- error_on_missing_name("SECRET")
+
 # Authenticate
-setAccountInfo(name = ("practicemeltshiny"),
-               token = ("A5E3C2E66A8F3C6D12F9603F8EFBB7F1"),
-               secret = ("ChlfnF5NsIu3o4dg1mQIyHUlxSMLuy9+nXxKMt17"))
+setAccountInfo(name = ("SHINY_ACC_NAME"),
+               token = ("TOKEN"),
+               secret = ("SECRET"))
 
 # Deploy the application.
 deployApp(appFiles = c("ui.R", "server.R", "likes.rds"), forceUpdate = TRUE)
