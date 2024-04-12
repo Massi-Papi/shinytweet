@@ -16,4 +16,4 @@ setAccountInfo(name = ("practicemeltshiny"),
                secret = ("ChlfnF5NsIu3o4dg1mQIyHUlxSMLuy9+nXxKMt17"))
 
 # Deploy the application.
-deployApp(appFiles = c("ui.R", "server.R", "likes.rds"))
+deployApp(appFiles = c("ui.R", "server.R", "likes.rds"), forceUpdate = TRUE)
