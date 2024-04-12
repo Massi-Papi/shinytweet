@@ -12,8 +12,8 @@ error_on_missing_name <- function(name) {
 
 # Authenticate
 setAccountInfo(name = ("practicemeltshiny"),
-               token = ("8B14429957A5C5AD977ECB77B147A5CB"),
-               secret = ("a01FiKOY/6zQE1bGNlIWhHh8yCEGNF/tEUJRWKyV"))
+               token = ("A5E3C2E66A8F3C6D12F9603F8EFBB7F1"),
+               secret = ("ChlfnF5NsIu3o4dg1mQIyHUlxSMLuy9+nXxKMt17"))
 
 # Deploy the application.
 deployApp(appFiles = c("ui.R", "server.R", "likes.rds"))
